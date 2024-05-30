@@ -12,7 +12,8 @@ import {type  User } from './user.model';
 })
 export class UserComponent {
  
-@Input({required:true}) user!: User
+@Input({required:true}) user!: User;
+@Input({required:true}) selected!:boolean;
     @Output() select = new EventEmitter();  //it has been using for a long time --> so use this instead
 
     // select = output<string>();  //this is not used though it is new 
