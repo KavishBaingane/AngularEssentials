@@ -1,18 +1,8 @@
 import { Component, EventEmitter, Input , Output } from '@angular/core';
 import { RequiredValidator } from '@angular/forms';
 import { DUMMY_USERS } from './dummy-users';
+import {type  User } from './user.model';
 
-// type User = {
-//   id:string;
-//   avatar: string;
-//   name:string;
-// }
-
-interface User{
-  id:string;
-    avatar: string;
-    name:string;
-}
 @Component({
   selector: 'app-user',
   standalone: true,
