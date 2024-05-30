@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input , Output } from '@angular/core';
 import { RequiredValidator } from '@angular/forms';
+import { DUMMY_USERS } from './dummy-users';
 
 // type User = {
 //   id:string;
@@ -20,7 +21,7 @@ interface User{
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-
+ 
 @Input({required:true}) user!: User
     @Output() select = new EventEmitter();  //it has been using for a long time --> so use this instead
 
