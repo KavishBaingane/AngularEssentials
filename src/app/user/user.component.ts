@@ -2,14 +2,13 @@ import { Component, EventEmitter, Input , Output } from '@angular/core';
 import { RequiredValidator } from '@angular/forms';
 import { DUMMY_USERS } from './dummy-users';
 import {type  User } from './user.model';
-import { CardComponent } from "../shared/card/card.component";
 
 @Component({
     selector: 'app-user',
-    standalone: true,
+    standalone: false,
     templateUrl: './user.component.html',
     styleUrl: './user.component.css',
-    imports: [CardComponent]
+    
 })
 export class UserComponent {
  
